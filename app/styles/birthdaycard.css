@@ -1,0 +1,219 @@
+/* MAIN BACKGROUND */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.birthday-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.surprise-bg {
+    background: linear-gradient(135deg, #1a0033, #33001a, #002933);
+}
+
+/* TITLE */
+.title {
+    font-size: 2.7rem;
+    color: #00eaff;
+    text-shadow: 0 0 20px #00eaff;
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+    margin-bottom: 30px;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00eaff;
+    }
+
+    to {
+        text-shadow: 0 0 30px #ff2e9a;
+    }
+}
+
+.Card {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.5;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.birthday-wish {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ff69b4;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00eaff;
+    text-shadow: 0 0 20px #00eaff;
+}
+
+
+
+/* BUTTONS */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #111;
+    border: 2px solid #8b5cf6;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8b5cf6;
+    color: black;
+    box-shadow: 0 0 20px #8b5cf6;
+}
+
+/* MODAL MESSAGE BOX */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #111;
+    color: white;
+    font-weight: lighter;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    border: 2px solid #8b5cf6;
+    box-shadow: 0 0 20px #8b5cf6;
+    animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.close-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    background: #8b5cf6;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* BALLOONS ANIMATION */
+.balloon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -70px;
+  width: 40px;
+  height: 55px;
+  border-radius: 50%;
+  animation: floatUp 4s linear forwards;
+  opacity: 0.9;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    .birthday-container {
+        width: 100%;
+        background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    }
+    .surprise-bg {
+        background: linear-gradient(135deg, #1a0033, #33001a, #002933);
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .Card {
+        font-size: 1rem;
+    }
+    .birthday-wish {
+        font-size: 1rem;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+    .btn {
+        padding: 10px 10px;
+        font-size: 0.8rem;
+    }
+    .buttons {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .title {
+        text-align: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .balloon {
+        width: 30px;
+        height: 40px;
+    }
+    
+
+}
