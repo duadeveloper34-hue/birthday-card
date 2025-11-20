@@ -195,6 +195,13 @@ p{
     .name {
         font-size: 1.2rem;
     }
+    .modal-content {
+        width: 95%;
+        font-size: 0.9rem;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 400;
+    }
     .btn {
         padding: 10px 10px;
         font-size: 0.8rem;
@@ -219,9 +226,7 @@ p{
         width: 30px;
         height: 40px;
     }
-    
-
-
 }
+
 
 
