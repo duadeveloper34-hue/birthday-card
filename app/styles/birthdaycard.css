@@ -186,6 +186,7 @@ p{
     }
     .birthday-wish {
         font-size: 1rem;
+        font-weight: 500;
     }
     .name {
         font-size: 1.2rem;
@@ -215,5 +216,6 @@ p{
         height: 40px;
     }
     
+
 
 }
