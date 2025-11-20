@@ -115,7 +115,7 @@ p{
 .modal-content {
     background: #111;
     color: white;
-    font-weight: lighter;
+    font-weight: 400;
     padding: 30px;
     border-radius: 15px;
     width: 350px;
@@ -223,4 +223,5 @@ p{
 
 
 }
+
 
