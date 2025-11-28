@@ -76,9 +76,9 @@ export default function BirthdayCard() {
                         <h2>💌 Birthday Message</h2>
                         <p>
                             Dear <b>Murtaza</b>,
-                            May your day be filled with love, joy, and endless blessings.
-                            You deserve all the happiness in the world.
-                            Happy Birthday! 🎂🎉
+                            Happy Birthday, my forever person 💛
+                            Tumhari presence mere liye blessing se kam nahi… Tum ho tu sab kuch perfect lagta hai.
+                            I love you more than words can ever say. 🌙🤍
                         </p>
                         <button className="close-btn" onClick={closeMessage}>Close</button>
                     </div>
@@ -87,3 +87,4 @@ export default function BirthdayCard() {
         </div>
     );
 }
+
