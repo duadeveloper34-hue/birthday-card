@@ -76,8 +76,8 @@ export default function BirthdayCard() {
                         <h2>💌 Birthday Message</h2>
                         <p>
                             Dear <b>Murtaza</b>,
-                            Happy Birthday, my forever person 💛
-                            Tumhari presence mere liye blessing se kam nahi… Tum ho tu sab kuch perfect lagta hai.
+                            Happy Birthday🎂
+                            Apki presence mere liye blessing se kam nahi… App han tu sab kuch perfect lagta hai.
                             I love you more than words can ever say. 🌙🤍
                         </p>
                         <button className="close-btn" onClick={closeMessage}>Close</button>
@@ -87,4 +87,5 @@ export default function BirthdayCard() {
         </div>
     );
 }
+
 
